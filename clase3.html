@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Quicksand', sans-serif;
+         margin: 0;
+        --very-light-pink : #c7c7c7;
+        --white: #FFFFFF;
+        --HospitalGreen: #95c99c;
+        --text-input-field: #f7f7f7;
+        --black: #000000;
+        --sm:16px;
+        --md:18px;
+        --lg: 20px;
+
+    }
+    .loginPage {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        height: 100 vh;
+    
+    }
+
+    .form {
+        display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            justify-content: center;
+
+    }
+    .logo {
+        width: 150px;
+        height: 48px;
+        margin-top: 20px;
+    }
+    .inputcamp {
+        margin-top: 20px;
+        background-color: var(--text-input-field);
+        border: none;
+        border-radius: 8px;
+        font-size: medium ;
+        
+
+    }
+    .label {
+
+        font-size: var(--md);
+        margin-top: 20px;
+        padding: 0%;
+        font-size: bold;
+    }
+    .primary-button {
+        margin-top: 44px;
+        background: linear-gradient(to right, #95c99c, pink);
+        border-radius: 8px;
+        border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+
+            
+
+    }
+
+
+</style>
+<body>
+   <div class="loginPage">
+    <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+    <div class="form">
+        <label for="email" class="label">Email Addreses </label>
+        <input type="email" id="email" placeholder="email" class="inputcamp">
+        <label for="password" class="label"> password</label>
+        <input type="password" name="password" id="password" placeholder="*************" class="inputcamp">
+        <input type="submit" value="login" class="primary-button">
+ 
+    </div>
+   </div>
+    
+</body>
+</html>
