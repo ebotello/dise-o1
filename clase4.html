@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Quicksand', sans-serif;
+         margin: 0;
+        --very-light-pink : #c7c7c7;
+        --white: #FFFFFF;
+        --HospitalGreen: #95c99c;
+        --text-input-field: #f7f7f7;
+        --black: #000000;
+        --sm:16px;
+        --md:18px;
+        --lg: 20px;
+
+    }
+    .form {
+        display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            justify-content: center;
+            width: 100%;
+
+    }
+    .h1{
+        font-size: var(--md);
+        text-align:right;
+        margin-top: 0%;
+
+
+    }
+    .label {
+        margin-top: 20px;
+        font-size: var(--sm);
+    }
+    
+    .inputcamp {
+
+        background: var(--text-input-field);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: medium;
+        border: none;
+        margin-top: 24px;
+
+    }
+
+    .primary-button {
+        background-color: var(--HospitalGreen);
+        border: none;
+        border-radius: 8px;
+        margin-top: 40px;
+        cursor: pointer;
+        font-size: medium;
+        color: var(--white);
+        
+        
+    }
+
+    
+</style>
+<body>
+    <div class="form">
+        <h1 class="title"> My Account</h1>
+        <label for="name" class="label"> Name </label>
+        <input type="text" id="name" class="inputcamp" placeholder="Name and Last name">
+
+        <label for="EmailAddress" class="label">Email address</label>
+        <input type="text" class="inputcamp" id="EmailAddress" placeholder=" yardSale@email.com">
+
+        <label for="password" class="label"> Password</label>
+        <input type="password"  class="inputcamp" name="password" id="password" placeholder="************">
+
+        <input type="submit" value="Save" class="primary-button">
+
+
+    </div>
+</body>
+</html>
