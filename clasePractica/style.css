@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(209, 152, 185);
+}
+
+.mainContainer {
+    display: grid;
+    gap: 14px;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+}
